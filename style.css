@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Block
+.button {
+  background-color: purple;
+  border-radius: 1rem;
+  padding: .5rem;
+  color: white;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.button--outlined {
+
+} */
+
+
+/* Block- Accordion */
+.accordion {
+  border: 1px solid lightgray;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+/* element - header */
+.accordion__header {
+  padding: .5rem 1rem;
+  background-color: rgb(254, 248, 240);
+  font-weight: bold;
+  cursor: pointer;
+}
+/* element - content */
+.accordion__content {
+  border: 1px solid lightgray;
+  padding: .5rem 1rem;
+  display: none;
+}
+
+.accordion--open .accordion__content {
+  display: block;
+}
+
+.accordions .accordion:not(:first-of-type) {
+  border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  border-top: none;
+}
+.accordions .accordion:not(:last-of-type) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/* modifier - closed
+.accordion--closed .accrodion__content {
+  display: block;
+} */
+
+
+
+
+
+
+
+
+.modal {
+  display: none;
+}
+.modal.modal--open {
+  display: block;
+}
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
